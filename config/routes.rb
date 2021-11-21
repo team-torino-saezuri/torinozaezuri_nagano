@@ -44,7 +44,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :customers, only:[:index, :show, :edit, :update]
     resources :items, only:[:index, :new, :create, :show, :edit, :update]
-    resources :genres, only:[:index, :new, :create, :show, :edit,]
+    resources :genres, only:[:index, :new, :create, :show, :edit]
     resources :orders, only:[:index, :show, :update] do
       member do
         get :current_index
