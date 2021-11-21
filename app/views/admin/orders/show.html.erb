@@ -20,7 +20,7 @@
               <td>〒<%= full_address(@order) %></td>
               <td><%= @order.payment_method %></td>
               <td>
-                <%= form_with (model: @order, url: admin_order_path, method: :patch, local: true) do |f| %>
+                <%= form_with(model: @order, url: admin_order_path, method: :patch, local: true) do |f| %>
                   <%= f.select :status, Order.statuses.keys, class:"status" %>
                   <%= f.submit "更新", class: "btn btn-sm btn-success" %>
                 <% end %>
@@ -30,7 +30,7 @@
         </table>
       </div>
     </div>
-    
+
     <div class="row justify-content-center">
       <div class="col-xs-8">
         <table class="table table-bordered">
@@ -52,7 +52,7 @@
               <td><%= sub_price(order_detail) %></td>
               <td>
                 <%= form_with(model: order_detail, url: admin_order_details_path(order_detail.id), method: :patch, local:true) do |f| %>
-                  <%= f.select :making_status, OrderDetail.making_statuses.key, class:"making_status" %>
+                  <%= f.select :making_status, OrderDetail.making_statuses.keys, class:"making_status" %>
                   <%= f.submit "更新", class:"btn btn-success" %>
                 <% end %>
               </td>

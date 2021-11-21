@@ -70,3 +70,4 @@ gem 'devise-i18n'
 gem 'devise-i18n-views'
 gem 'faker'
 gem 'dotenv-rails'
+gem "enum_help"
