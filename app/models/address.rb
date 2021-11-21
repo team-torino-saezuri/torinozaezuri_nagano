@@ -4,7 +4,7 @@ class Address < ApplicationRecord
 
   validates :name, presence: true
   validates :address, presence: true
-  validates :postal_code, length: {is: 7}, numericality: {only_integer: true}
+  validates :postal_code, length: {is: 7}, numericality: { only_integer: true }
 
   def order_address
     self.postal_code + self.address + self.name
