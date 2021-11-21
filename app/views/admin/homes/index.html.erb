@@ -1,0 +1,21 @@
+<% provide(:title, "管理者トップページ") %>
+
+<div class="container">
+  <h2 class="my-5">管理者トップページ</h2>
+  <div class="d-flex justify-content-center">
+    <ul style="list-style: none;">
+      <li class="text-muted h2 my-3">
+        <%= link_to "　注文管理", admin_orders_path, class:"text-decoration-none fas fa-cart-arrow-down" %>
+      </li>
+      <li class="text-muted h2 my-3">
+       <%= link_to "　商品管理", admin_items_path, class:"text-decoration-none fas fa-birthday-cake" %>
+      </li>
+       <li class="text-muted h2 my-3">
+       <%= link_to "　ジャンル登録", admin_genres_path, class:"text-decoration-none fas fa-paperclip" %>
+      </li>
+       <li class="text-muted h2 my-3">
+       <%= link_to "　顧客一覧", admin_customers_path, class:"text-decoration-none fas fa-user" %>
+      </li>
+    </ul>
+  </div>
+</div>
