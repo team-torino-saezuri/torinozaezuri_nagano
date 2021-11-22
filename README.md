@@ -1,24 +1,41 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# ながのケーキ
+DMM　WEBCAMP チーム開発フェーズ ECサイト制作課題
 
-Things you may want to cover:
+# 設計
+## ER図
+画像載せたい
 
-* Ruby version
+## アプリケーション詳細設計図
+* 顧客側
+画像載せたい
 
-* System dependencies
+* 管理者側
+画像載せたい
 
-* Configuration
+* gem
+画像載せたい
 
-* Database creation
+# 開発環境
+ Ruby version
 
-* Database initialization
+# インストール
+ Gitクローン方法記載
 
-* How to run the test suite
+# 推奨環境
+Ruby ２.５以降
+Rails 5.2以降
 
-* Services (job queues, cache servers, search engines, etc.)
+# 開発者
+## チーム名
+鳥の囀り　（とりのさえずり）
 
-* Deployment instructions
+## メンバー
+* まつばさん
+* くまさん
+* らいさん
+* いーさん
 
-* ...
+# 作成期間
+2021/11/11　　着手 ~ 2021/11/●● 完成
