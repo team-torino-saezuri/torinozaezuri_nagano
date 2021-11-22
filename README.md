@@ -7,7 +7,12 @@ DMM　WEBCAMP チーム開発フェーズ ECサイト制作課題
 ## ER図
 ![torinosaezuri_er](https://user-images.githubusercontent.com/90536910/142805655-3864a573-fffb-40b4-a50b-9a7d381805eb.jpg)
 
+## テーブル定義書
+![テーブル定義書_チーム鳥の囀り_G_page-0001](https://user-images.githubusercontent.com/90536910/142806514-c6065467-5e88-45cf-a971-077a64600cc7.jpg)
+
 ## アプリケーション詳細設計図
+
+
 * 顧客側
 画像載せたい
 
