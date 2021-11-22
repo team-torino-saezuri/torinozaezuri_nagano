@@ -25,7 +25,7 @@ DMM　WEBCAMP チーム開発フェーズ ECサイト制作課題
  Ruby version
 
 # インストール
- Gitクローン方法記載
+ git clone git@github.com:team-torino-saezuri/torinozaezuri_nagano.git
 
 # 推奨環境
 Ruby ２.５以降
