@@ -5,7 +5,7 @@ DMM　WEBCAMP チーム開発フェーズ ECサイト制作課題
 
 # 設計
 ## ER図
-[Copy of Untitled Diagram.drawio.pdf](https://github.com/team-torino-saezuri/torinozaezuri_nagano/files/7578390/Copy.of.Untitled.Diagram.drawio.pdf)
+![torinosaezuri_er](https://user-images.githubusercontent.com/90536910/142805655-3864a573-fffb-40b4-a50b-9a7d381805eb.jpg)
 
 ## アプリケーション詳細設計図
 * 顧客側
