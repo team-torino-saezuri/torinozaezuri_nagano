@@ -11,6 +11,7 @@
     <% customers.each do |customer| %>
     <tr>
       <td class="info col-xs-1"><%= customer.id %></td>
+      <td class="text-left"><%= customer.last_name %><%= customer.first_name %></td>
       <td class="text-left"><%=customer.email %></td>
       <td class="col-xs-2">
         <% if customer.is_deleted == true %>
