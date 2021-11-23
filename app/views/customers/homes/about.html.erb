@@ -1,18 +1,16 @@
 <% provide(:title, "サイトについて") %>
 
-<div class="text-center">
-  <h1 class="font-weight-bold">Nagano cakeのこだわり</h1>
+<div class="text-center my-5">
+  <h2 class="font-weight-bold">Nagano cakeのこだわり</h2>
 </div>
 <div class="row">
   <div class="col-xs-6">
-    <%= image_tag "lemon_cake.jpg", alt: "cake1", :size => "500×400" %>
+    <%= image_tag "lemon_cake.jpg", size: '400x400', class:"border" %>
   </div>
   <div class="mx-auto align-items-center">
     <br>
     <br>
-    <br>
     <h5><u class="font-weight-bold">生産者の方が分かる素材を厳選</u></h5>
-    <br>
     <br>
     「体に優しいケーキ」をコンセプトに<br>
     無添加・無農薬の素材を厳選しています<br>
@@ -24,9 +22,7 @@
   <div class="col-xs-6 mx-auto aling-items-center">
     <br>
     <br>
-    <br>
     <h5><u class="font-weight-bold">無農薬野菜を全国のみんなに届けたい</u></h5>
-    <br>
     <br>
     見習い農家の〇〇さんは、安全な野菜を全国の皆さんに<br>
     食べてもらいたいと日々無農薬農業を研究中です<br>
@@ -35,8 +31,8 @@
     <br>
   </div>
   <br>
-  <div class="col-xs-6 mx-auto">
-    <%= image_tag "farmer.jpg", alt: "farmer", :size => "500×400" %>
+  <div class="col-xs-6 mx-auto my-5">
+    <%= image_tag "farmer.jpg", alt: "farmer", :size => "400x300", class:"border" %>
   </div>
 </div>
 <br>
