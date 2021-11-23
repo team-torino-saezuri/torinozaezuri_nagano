@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>注文情報確認</h2>
+  <h2 class="my-5">注文情報確認</h2>
   <div class="row">
     <div class="col-xs-9">
       <table class="table">
@@ -15,7 +15,6 @@
           <% @cart_items.each do |cart| %>
           <tr>
             <td class="text-left">
-              <%= attachment_image_tag(cart.item, :image, size: "60×50") %>
               <%= cart.item.name %>
             </td>
             <td class="text-right">

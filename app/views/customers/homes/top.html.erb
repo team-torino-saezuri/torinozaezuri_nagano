@@ -1,13 +1,22 @@
-<div id="CarouselExampleControls" class="carousel slide mx-auto" data-ride="carousel">
+<div id="CarouselExampleControls" class="carousel slide carousel-slide mx-auto my-5 border" data-ride="carousel">
   <div class="carousel-inner">
+    <div class="cover-text">
+      <b><h1>Welcome Nagano Cake</h1>
+      <br><br><br>
+      <p class="text-center">このサイトは、ケーキ販売のECサイトになります<br><br>
+        会員でない方も商品の閲覧はできますが<br><br>
+        購入には
+        <u><%= link_to "会員登録", new_customer_registration_path %></u>
+        が必要になります</p></b>
+    </div>
     <div class="carousel-item active">
-      <img class="d-block w-100" src="assets/chocolate_cake.jpg" alt="First slide">
+      <img class="d-block w-100 img-fluid mx-auto" src="assets/chocolate_cake.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="assets/whole_cake.jpg" alt="Second slide">
+      <img class="d-block w-100 img-fluid mx-auto" src="assets/purin.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="assets/creame.jpg" alt="Third slide">
+      <img class="d-block w-100 img-fluid mx-auto" src="assets/creame.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#CarouselExampleControls" rol="button" data-slide="prev">
@@ -20,29 +29,14 @@
   </a>
 </div>
 
-<div class="container">
+<div class="container new-item mb-3">
+  <h2><b>新着商品</b></h2>
   <div class="row">
-    <div class="col-xs-12 mx-auto">
-      <div class="text-center">
-        <p><span>Welcome Naganocake</span><br>
-        このサイトは、ケーキ販売のECサイトになります<br>
-        会員でない方も商品の閲覧はできますが<br>
-        購入には
-        <%= link_to "会員登録", new_customer_registration_path %>
-        が必要になります<br></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container new-item">
-  <h2>新着商品</h2>
-  <div class="row">
-    <% @items.first(4).each do |item| %>
+    <% @items.last(4).each do |item| %>
       <%= render "item_each",item: item %>
     <% end %>
   </div>
-  <div class="all-items-show-button">
-    <%= link_to "すべての商品を見る", items_path %>
+  <div class="all-items-show-button text-right mt-3 mb-5">
+    <%= link_to "すべての商品を見る>>", items_path %>
   </div>
 </div>

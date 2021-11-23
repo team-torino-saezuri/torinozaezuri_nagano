@@ -1,15 +1,15 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-12 px-sm-0">
-      <h1>商品一覧</h1><h4>(全<%= @total_items.count %>件)</h4>
+    <div class="col-sm-12 px-sm-0 my-5">
+      <h2>商品一覧<span style="font-size:70%">(全<%= @total_items.count %>件)</span></h2>
     </div>
   </div>
-  <div class="row mt-3 mb-3 text-center text-md-left">
+  <div class="row my-3 text-center text-md-left">
     <% @items.each do |item| %>
-      <div class="col-xs-10 col-md-6 col-lg-3">
-        <div class="card w-100 bg-transparent border-0" style="width: 18rem;">
+      <div class="col-xs-10 col-md-6 col-lg-3 mb-3">
+        <div class="card w-100 bg-transparent border" style="width: 18rem;">
           <%= link_to item_path(item.id) do %>
-            <p class="img-wrap"><%= attachment_image_tag item, :image, :size => '80%',class:'icon', fallback: "no_image.jpg" %></p>
+            <p class="img-wrap"><%= attachment_image_tag item, :image, :fill, 245, 180, class:'icon', fallback: "no_image.jpg" %></p>
           <% end %>
           <div class="card-body">
             <p class="item-details item-name card-text"><%= item.name %></p>
